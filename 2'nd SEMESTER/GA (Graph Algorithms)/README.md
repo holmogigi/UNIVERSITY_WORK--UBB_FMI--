@@ -35,6 +35,7 @@ Note: You are allowed to use, from existing libraries, data structures such as l
 Text file format: the graph will be read from a text file having the following format:
 On the first line, the number n of vertices and the number m of edges;
 On each of the following m lines, three numbers, x, y and c, describing an edge: the origin, the target and the cost of that edge.
+
 -
 
 -
