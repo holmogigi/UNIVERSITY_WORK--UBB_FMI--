@@ -33,7 +33,6 @@ Generally, make sure the graph cannot be brought in an inconsistent state by app
 Note: You are allowed to use, from existing libraries, data structures such as linked lists, double-linked lists, maps, etc. However, you are not allowed to use already-implemented graphs (though, you are encouraged to take a look at them).
 
 Text file format: the graph will be read from a text file having the following format:
-
 On the first line, the number n of vertices and the number m of edges;
 On each of the following m lines, three numbers, x, y and c, describing an edge: the origin, the target and the cost of that edge.
 -
