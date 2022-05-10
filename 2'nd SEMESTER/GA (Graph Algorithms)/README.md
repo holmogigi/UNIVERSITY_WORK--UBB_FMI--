@@ -1,4 +1,6 @@
-- 
+
+A1
+-
 Design and implement an abstract data type directed graph and a function (either a member function or an external one, as your choice) for reading a directed graph from a text file.
 
 The vertices will be specified as integers from 0 to n-1, where n is the number of vertices.
@@ -36,18 +38,19 @@ Text file format: the graph will be read from a text file having the following f
 On the first line, the number n of vertices and the number m of edges;
 On each of the following m lines, three numbers, x, y and c, describing an edge: the origin, the target and the cost of that edge.
 
--
 
+A2
 -
 Write a program that, given a directed graph and two vertices, finds a lowest length path between them, by using a backward breadth-first search from the ending vertex.
--
 
+
+A3
 -
 Write a program that, given a graph with costs and two vertices, finds a lowest cost walk between the given vertices, or prints a message if there are negative cost cycles accessible from the starting vertex. The program will use the Ford's algorithm.
--
 
+
+A4
 -
 Write a program that, given a graph with costs, does the following:
 Verify if the corresponding graph is a DAG and performs a topological sorting of the activities using the algorithm based on predecessor counters;
 If it is a DAG, finds a highest cost path between two given vertices, in O(m+n).
--
