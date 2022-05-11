@@ -1,4 +1,4 @@
-from queue import PriorityQueue
+from queue import *
 import math
 from copy import deepcopy
 from exceptions import *
@@ -248,31 +248,53 @@ class Graph:
 
 
     # Function that sorts the vertices topologically
-    def topo_sort_DFS(self, vertex, sorted, fully_processed, in_process):
-        in_process.add(vertex)
-        for inbound in self.get_inbound_edges(vertex):
-            if inbound in in_process:
-                return False
-            else:
-                if inbound not in fully_processed:
-                    ok=self.topo_sort_DFS(inbound, sorted, fully_processed, in_process)
-                    if not ok:
-                        print(sorted)
-                        return False
-        in_process.remove(vertex)
-        sorted.append(vertex)
-        fully_processed.add(vertex)
-        return True
+    def topo_sort_predecessor(self):
+        sorted=[]
+        q=Queue()
+        count={}
+
+        for each in self._inbound:
+            count[each]= len(self._inbound[each])
+            if count[each]==0:
+                q.put(each)
+
+        while not q.empty():
+            current=q.get()
+            sorted.append(current)
+            for each in self.get_outbound_edges(current):
+                count[each]-=1
+                if count[each]==0:
+                    q.put(each)
+        if len(sorted) < len(self._inbound):
+            sorted=[]
+        return sorted
 
 
     # Function that checks if the given graph is DAG
     def DAG(self):
-        sorted=[]
-        fully_processed=set()
-        in_process=set()
-        for vertex in self.vertices_iterator():
-            if vertex not in fully_processed:
-                ok=self.topo_sort_DFS(vertex,sorted,fully_processed,in_process)
-                if not ok:
-                    return 0
+        sorted=self.topo_sort_predecessor()
+        if sorted==[]:
+            return 0
         return 1
+
+    # Function that calculates the highest cost path between 2 given vertices
+    def highest_cost_path(self, start, end):
+        topo_sorted=self.topo_sort_predecessor()
+        distance={}
+        previous={}
+        inf=float('-inf')
+
+        for vertex in topo_sorted:
+            distance[vertex]=inf
+            previous[vertex]=-1
+        distance[start]=0
+
+        for vertex in topo_sorted:
+            if vertex==end:
+                break
+            for vertex2 in self.get_outbound_edges(vertex):
+                if distance[vertex2] < distance[vertex] + self._costs[(vertex,vertex2)]:
+                    distance[vertex2]=distance[vertex]+self._costs[(vertex,vertex2)]
+                    previous[vertex2]=vertex
+
+        return distance[end], previous
