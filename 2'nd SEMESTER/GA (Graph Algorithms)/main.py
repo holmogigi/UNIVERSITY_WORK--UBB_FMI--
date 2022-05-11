@@ -128,13 +128,24 @@ def main():
                 print("Cost: " + str(distance))
 
             elif n=='19':
-                sorted_DAG=graph.DAG()
-                if sorted_DAG==0:
+                DAG=graph.DAG()
+                if DAG==0:
                     raise GraphNotDAG
                 else:
                     print("!Graph is DAG!\n")
                     startver=int(input("Start vertex: "))
                     endver=int(input("End vertex: "))
+
+                    distance,previous=graph.highest_cost_path(startver,endver)
+                    path=[]
+                    vertex=endver
+                    path.append(vertex)
+                    while (previous[vertex]!=-1):
+                        path.append(previous[vertex])
+                        vertex=previous[vertex]
+                    path.reverse()
+                    print("Path :" + ("-".join(str(e) for e in path)))
+                    print("Cost: " + str(distance))
 
 
         except InvalidVertexError:
