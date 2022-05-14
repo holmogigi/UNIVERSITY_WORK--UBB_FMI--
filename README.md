@@ -1,3 +1,3 @@
-# UNIVERSITY_WORK--UBB_FMI--
-All the projects that I did while getting my Bachelor Degree in Computer Science at Universitatea Babeș-Bolyai Cluj-Napoca
+# UNI ASSIGMENTS
+All the projects that I did while getting my Bachelor Degree in Computer Science at Babeș-Bolyai University Cluj-Napoca
 -
