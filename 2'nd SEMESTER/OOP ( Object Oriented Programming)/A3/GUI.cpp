@@ -72,12 +72,12 @@ void GUI::initGUI() {
     this->deleteEventButton->setFont(f);
     this->updateEventButton = new QPushButton("Update");
     this->updateEventButton->setFont(f);
-    this->filterEventButton = new QPushButton("Filter");
-    this->filterEventButton->setFont(f);
+    //this->filterEventButton = new QPushButton("Filter");
+    //this->filterEventButton->setFont(f);
     gridLayout->addWidget(this->addEventButton, 0, 0);
     gridLayout->addWidget(this->deleteEventButton, 0, 1);
     gridLayout->addWidget(this->updateEventButton, 0, 2);
-    gridLayout->addWidget(this->filterEventButton, 1, 1);
+    //gridLayout->addWidget(this->filterEventButton, 1, 1);
     leftLayout->addWidget(buttonsWidget);
 
     //Middle part
