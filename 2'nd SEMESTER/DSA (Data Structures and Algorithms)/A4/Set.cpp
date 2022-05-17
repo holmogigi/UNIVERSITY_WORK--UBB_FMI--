@@ -3,6 +3,7 @@
 #include <math.h>
 
 // 0(hash_size)
+// Constructor
 Set::Set()
 {
     this->m=10;
@@ -12,6 +13,7 @@ Set::Set()
         this->hash_table[i]= nullptr;
 }
 
+
 // 0(1)
 // Hash function(division method) used to get the hash of an element
 int Set::h(TElem elem) const
@@ -20,7 +22,8 @@ int Set::h(TElem elem) const
 }
 
 
-//
+// 0(hash_size)
+// Resize function used for increasing the size of the hash table when the hash size divided by m(capacity) is < 0.9
 void Set::resize(int new_cap)
 {
     Node** new_hash=new Node*[new_cap];
@@ -49,13 +52,14 @@ void Set::resize(int new_cap)
 }
 
 
-//
+// 0(hash_size)
+// Adding an element and resizeing if necessary
 bool Set::add(TElem elem)
 {
     if (search(elem))
         return false;
 
-    if ((float)hash_size / (float)m>=ALPHA)
+    if ((float)hash_size/(float)m >= ALPHA)
         resize(2*m);
 
     int pos=h(elem);
@@ -68,7 +72,9 @@ bool Set::add(TElem elem)
     return true;
 }
 
-//
+
+// 0(hash_size)
+// Removing an element from the hash table
 bool Set::remove(TElem elem)
 {
     if (size()==0)
@@ -99,7 +105,9 @@ bool Set::remove(TElem elem)
     return false;
 }
 
-//
+
+// 0(hash_size)
+// Searching for an element in the hash
 bool Set::search(TElem elem) const
 {
     if (size()==0)
@@ -131,7 +139,8 @@ bool Set::isEmpty() const
 }
 
 
-//
+// 0(hash_size)
+// Destructor
 Set::~Set()
 {
     for (int i=0;i<m;i++)
@@ -148,10 +157,8 @@ Set::~Set()
 }
 
 
-//
+// 0(hash_size)
 SetIterator Set::iterator() const
 {
 	return SetIterator(*this);
 }
-
-
