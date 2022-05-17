@@ -1,7 +1,7 @@
 #pragma once
 #define NULL_TELEM -111111
 
-#define ALPHA 0.75
+#define ALPHA 0.90
 
 typedef int TElem;
 class SetIterator;
@@ -51,8 +51,3 @@ class Set{
         ~Set();
 
 };
-
-
-
-
-
