@@ -13,9 +13,8 @@ GUI::~GUI(){}
 void GUI::initGUI() {
     //Window layout
     QHBoxLayout* layout = new QHBoxLayout{this};
-
-    //Leftpart of the window
-    //events list
+    
+    //Events list
     this->filter_type=new QLineEdit{};
     QString filter_text=this->filter_type->text();
     this->eventsList = new QListWidget{};
@@ -27,7 +26,7 @@ void GUI::initGUI() {
     leftLayout->addWidget(allEventsLabel);
     leftLayout->addWidget(this->eventsList);
 
-    //events data
+    //Events data
     QWidget* formLayout = new QWidget{};
     QFormLayout* eventLayout = new QFormLayout{formLayout};
     this->titleEdit = new QLineEdit{};
@@ -72,12 +71,9 @@ void GUI::initGUI() {
     this->deleteEventButton->setFont(f);
     this->updateEventButton = new QPushButton("Update");
     this->updateEventButton->setFont(f);
-    //this->filterEventButton = new QPushButton("Filter");
-    //this->filterEventButton->setFont(f);
     gridLayout->addWidget(this->addEventButton, 0, 0);
     gridLayout->addWidget(this->deleteEventButton, 0, 1);
     gridLayout->addWidget(this->updateEventButton, 0, 2);
-    //gridLayout->addWidget(this->filterEventButton, 1, 1);
     leftLayout->addWidget(buttonsWidget);
 
     //Middle part
@@ -99,6 +95,15 @@ void GUI::initGUI() {
     QGridLayout* gridList = new QGridLayout{buttonslist};
     this->nextButton = new QPushButton("Next");
     this->nextButton->setFont(f);
+
+    // Gradient Lab Work
+    QLinearGradient list_gradient(0, 0, 0, this->list->height());
+    list_gradient.setColorAt(0,Qt::darkMagenta);
+    list_gradient.setColorAt(1,Qt::darkBlue);
+    QPalette palette= this->list->palette();
+    palette.setBrush(QPalette::ColorRole::Base, QBrush(list_gradient));
+    this->list->setPalette(palette);
+    //
 
     gridList->addWidget(this->nextButton, 0, 0);
     rightLayout->addWidget(buttonslist);
