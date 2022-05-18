@@ -1,12 +1,10 @@
 #pragma once
+#include <math.h>
 #define NULL_TELEM -111111
-
 #define ALPHA 0.90
 
 typedef int TElem;
 class SetIterator;
-
-
 class Set{
 
 	friend class SetIterator;
@@ -51,3 +49,8 @@ class Set{
         ~Set();
 
 };
+
+
+
+
+

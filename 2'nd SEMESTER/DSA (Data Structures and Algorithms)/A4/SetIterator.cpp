@@ -1,8 +1,10 @@
 #include "SetIterator.h"
 #include "Set.h"
 
-// 0(hash_size)
-// Constructor
+// Best case: Theta(1)
+// Worst case: Theta(hash_size)
+// Total complexity: O(hash_size)
+//  Constructor
 SetIterator::SetIterator(const Set& m) : set(m)
 {
     if (set.isEmpty())
@@ -13,30 +15,33 @@ SetIterator::SetIterator(const Set& m) : set(m)
     else
     {
         this->cur_key=0;
-        while (this->cur_key<set.m && set.hash_table[this->cur_key]== nullptr)
+        while (set.hash_table[this->cur_key]== nullptr)
             this->cur_key++;
         this->cur_val=set.hash_table[this->cur_key];
     }
 }
 
 
-// 0(hash_size)
-// Increments up to the first element and puts its value in the cur_val variable
+// Best case: Theta(1)
+// Worst case: Theta(hash_size)
+// Total complexity: O(hash_size)
+//  Increments up to the first element and puts its value in the cur_val variable
 void SetIterator::first()
 {
     if (set.isEmpty())
         throw std::exception();
 
     this->cur_key=0;
-    while (set.hash_table[cur_key]== nullptr)
+    while (set.hash_table[this->cur_key]== nullptr)
         this->cur_key++;
-
     this->cur_val=set.hash_table[this->cur_key];
 }
 
 
-// 0(hash_size)
-// Updates the index and value of the next element in the hash
+// Best case: Theta(1)
+// Worst case: Theta(hash_size)
+// Total complexity: O(hash_size)
+//  Updates the index and value of the next element in the hash
 void SetIterator::next()
 {
     if (!valid())
@@ -57,7 +62,7 @@ void SetIterator::next()
 }
 
 
-// 0(1)
+// O(1)
 // Returns the current element from the hash
 TElem SetIterator::getCurrent()
 {
@@ -67,7 +72,7 @@ TElem SetIterator::getCurrent()
 }
 
 
-// 0(1)
+// O(1)
 // Checks to see if the current position is valid
 bool SetIterator::valid() const
 {
@@ -75,3 +80,6 @@ bool SetIterator::valid() const
         return false;
     return true;
 }
+
+
+

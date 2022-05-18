@@ -1,9 +1,8 @@
 #include "Set.h"
 #include "SetIterator.h"
-#include <math.h>
 
-// 0(hash_size)
-// Constructor
+// O(hash_size)
+//  Constructor
 Set::Set()
 {
     this->m=10;
@@ -14,8 +13,8 @@ Set::Set()
 }
 
 
-// 0(1)
-// Hash function(division method) used to get the hash of an element
+// O(1)
+//  Hash function(division method) used to get the hash of an element
 int Set::h(TElem elem) const
 {
     return abs(elem%m);
@@ -23,7 +22,7 @@ int Set::h(TElem elem) const
 
 
 // 0(hash_size)
-// Resize function used for increasing the size of the hash table when the hash size divided by m(capacity) is < 0.9
+//  Resize function used for increasing the size of the hash table when the hash size divided by m(capacity) is < 0.9
 void Set::resize(int new_cap)
 {
     Node** new_hash=new Node*[new_cap];
@@ -52,8 +51,10 @@ void Set::resize(int new_cap)
 }
 
 
-// 0(hash_size)
-// Adding an element and resizeing if necessary
+// Best case: Theta(1)
+// Worst case: Theta(hash_size)
+// Total complexity: O(hash_size)
+//  Adding an element and resizeing if necessary
 bool Set::add(TElem elem)
 {
     if (search(elem))
@@ -68,13 +69,14 @@ bool Set::add(TElem elem)
     new_node->next=this->hash_table[pos];
     this->hash_table[pos]=new_node;
     this->hash_size++;
-
     return true;
 }
 
 
-// 0(hash_size)
-// Removing an element from the hash table
+// Best case: Theta(1)
+// Worst case: Theta(hash_size)
+// Total complexity: O(hash_size)
+//  Removing an element from the hash table
 bool Set::remove(TElem elem)
 {
     if (size()==0)
@@ -106,8 +108,10 @@ bool Set::remove(TElem elem)
 }
 
 
-// 0(hash_size)
-// Searching for an element in the hash
+// Best case: Theta(1)
+// Worst case: Theta(hash_size)
+// Total complexity: O(hash_size)
+//  Searching for an element in the hash
 bool Set::search(TElem elem) const
 {
     if (size()==0)
@@ -123,14 +127,14 @@ bool Set::search(TElem elem) const
 }
 
 
-// 0(1)
+// O(1)
 int Set::size() const
 {
     return hash_size;
 }
 
 
-// 0(1)
+// O(1)
 bool Set::isEmpty() const
 {
     if (size()==0)
@@ -139,7 +143,7 @@ bool Set::isEmpty() const
 }
 
 
-// 0(hash_size)
+// O(hash_size)
 // Destructor
 Set::~Set()
 {
@@ -157,8 +161,10 @@ Set::~Set()
 }
 
 
-// 0(hash_size)
+// O(1)
 SetIterator Set::iterator() const
 {
 	return SetIterator(*this);
 }
+
+
