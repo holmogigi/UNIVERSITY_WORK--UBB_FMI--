@@ -45,8 +45,11 @@ class Set{
         //return an iterator for the set
         SetIterator iterator() const;
 
-        // destructor
+        //destructor
         ~Set();
+
+        //keeps only the elements which appear in s as well
+        void intersection(const Set& s);
 
 };
 

@@ -168,3 +168,20 @@ SetIterator Set::iterator() const
 }
 
 
+// LAB WORK
+void Set::intersection(const Set &s)
+{
+    SetIterator it=iterator();
+    for (int i=0;i<this->hash_size;i++)
+    {
+        int node=it.getCurrent();
+        if (!s.search(node))
+        {
+            remove(node);
+            i--;
+        }
+        it.next();
+    }
+}
+
+

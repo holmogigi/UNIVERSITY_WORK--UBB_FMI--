@@ -294,16 +294,47 @@ void testQuantity() {//add lots of elements
 	assert(s.size() == 0);
 }
 
+void testIntersection()
+{
+    cout <<"Test Intersection"<< endl;
+    Set initial;
+    Set s;
+    initial.add(1);
+    initial.add(2);
+    initial.add(3);
+    initial.add(4);
+    initial.add(5);
+    assert(initial.size()==5);
+    s.add(1);
+    s.add(5);
+    initial.intersection(s);
+    assert(initial.size()==2);
+    assert(initial.search(1)== true);
+    assert(initial.search(5)== true);
+    assert(initial.search(2)== false);
+    assert(initial.search(3)== false);
+    assert(initial.search(4)== false);
+    s.add(6);
+    initial.add(6);
+    initial.intersection(s);
+    assert(initial.size()==3);
+    assert(initial.search(6)==true);
+    s.remove(6);
+    initial.intersection(s);
+    assert(initial.size()==2);
+    assert(initial.search(6)== false);
+}
 
 // we don't know how the set is represented and in which order the elements are stored or printed, we can only test general thing
-void testAllExtended() {
+void testAllExtended()
+{
 	testCreate();
 	testAdd();
 	testRemove();
 	testIterator();
 	testMix();
 	testQuantity();
-
+    testIntersection();
 }
 
 
