@@ -54,3 +54,8 @@ A4
 Write a program that, given a graph with costs, does the following:
 Verify if the corresponding graph is a DAG and performs a topological sorting of the activities using the algorithm based on predecessor counters;
 If it is a DAG, finds a highest cost path between two given vertices, in O(m+n).
+
+
+A5
+-
+Given an undirected graph, find a vertex coloring with minimum number of colors.
