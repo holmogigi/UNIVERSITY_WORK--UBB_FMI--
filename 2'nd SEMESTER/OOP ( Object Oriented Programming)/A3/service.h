@@ -1,9 +1,13 @@
 #pragma once
 #include "repository.h"
 #include <string>
+#include "memory"
+#include "undoredo.h"
 
 class Service{
     Repository& repository;
+    std::vector<std::shared_ptr<UndoRedoAction>> undoAdmin;
+    std::vector<std::shared_ptr<UndoRedoAction>> redoAdmin;
 public:
 
     explicit Service(Repository& repo);
@@ -21,6 +25,12 @@ public:
     ~Service();
 
     void writeToFileService();
+
+    void undoLastAction();
+
+    void redoLastAction();
+
+    void clearUndoRedo();
 
     int searchService(const std::string &link);
 };

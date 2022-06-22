@@ -65,6 +65,11 @@ int UserService::filterByMonth(std::vector<Event> &events, std::string &filter_m
     return events.size();
 }
 
+UserRepository* UserService::getUserRepo() {
+    return this->userRepository;
+}
+
+
 UserService::UserService(Repository &repository1): repository{repository1}{}
 
 UserService::~UserService() =default;

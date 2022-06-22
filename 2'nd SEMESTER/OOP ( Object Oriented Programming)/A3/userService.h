@@ -27,5 +27,7 @@ public:
 
     void removeUserService(std::string &link);
 
+    UserRepository* getUserRepo();
+
     int filterByMonth(std::vector<Event>& events, std::string& filter_month);
 };

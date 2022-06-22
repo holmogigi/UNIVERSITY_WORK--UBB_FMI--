@@ -34,7 +34,7 @@ add_executable(a5-6-holmogigi
         validators.cpp
         validators.h
          GUI.cpp
-        GUI.h)
+        GUI.h gui_ui.cpp gui_ui.h gui_ui.ui undoredo.cpp undoredo.h)
 
 target_link_libraries(a5-6-holmogigi
         Qt::Core

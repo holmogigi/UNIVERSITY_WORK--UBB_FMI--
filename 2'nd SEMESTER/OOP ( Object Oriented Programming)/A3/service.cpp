@@ -38,4 +38,34 @@ int Service::searchService(const std::string &link) {
     return index;
 }
 
+void Service::undoLastAction()
+{
+    if(this->undoAdmin.empty()){
+        std::string error;
+        error += std::string("Can't undo anymore");
+        if(!error.empty())
+            throw RepositoryException(error);
+    }
+    this->undoAdmin.back()->undo();
+    this->redoAdmin.push_back(this->undoAdmin.back());
+    this->undoAdmin.pop_back();
+}
+
+void Service::redoLastAction() {
+    if(this->redoAdmin.empty()){
+        std::string error;
+        error += std::string("Can't redo anymore");
+        if(!error.empty())
+            throw RepositoryException(error);
+    }
+    this->redoAdmin.back()->redo();
+    this->undoAdmin.push_back(this->redoAdmin.back());
+    this->redoAdmin.pop_back();
+}
+
+void Service::clearUndoRedo() {
+    this->undoAdmin.clear();
+    this->redoAdmin.clear();
+}
+
 Service::~Service() =default;
