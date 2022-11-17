@@ -98,6 +98,5 @@ CREATE TABLE Earnings
 	EQ_id INT,
 	MAN_id INT,
 	PS_id INT FOREIGN KEY REFERENCES ProteinShakes(PS_id),
-	FOREIGN KEY (SM_id,MAN_id) REFERENCES SupplementsManufacturers(SM_id,MAN_id),
-	FOREIGN KEY (EQ_id, MAN_id) REFERENCES EquipmentsManufacturers(EQ_id, MAN_id)
+	FOREIGN KEY (SM_id,MAN_id) REFERENCES SupplementsManufacturers(SM_id,MAN_id)
 )
