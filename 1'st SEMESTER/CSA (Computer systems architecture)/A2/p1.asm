@@ -13,7 +13,7 @@ d db 04
 
 segment code use32 class=code
     start:
-          ;(a+d+d)-c+(b+b)
+          ;(a+d+d)-c+(b+b) (a,b,c,d - byte)
             mov Al, 0;
             add Al, [a];
             add Al, [d];
