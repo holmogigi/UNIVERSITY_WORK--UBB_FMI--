@@ -3,8 +3,8 @@ from random import randint
 from select import select
 from time import sleep
 
-IP = "192.168.101.99"
-PORT = 7778
+IP = "0"
+PORT = 0
 ADDR = (IP, PORT)
 
 MAT_SIZE = 3
