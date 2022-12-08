@@ -1,0 +1,441 @@
+exeStack: (Ref(int)  v;(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: Ref(Ref(int) )  a(New(a, v);( print(v); print(a)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: Ref(Ref(int) )  a(New(a, v);( print(v); print(a)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (New(a, v);( print(v); print(a)))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (New(a, v);( print(v); print(a)))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: New(a, v)( print(v); print(a))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: New(a, v)( print(v); print(a))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: ( print(v); print(a))
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: ( print(v); print(a))
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(v) print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(v) print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int)]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int)]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: 
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int), (2, Ref(int) )]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: 
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int), (2, Ref(int) )]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: (Ref(int)  v;(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: Ref(Ref(int) )  a(New(a, v);( print(v); print(a)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: Ref(Ref(int) )  a(New(a, v);( print(v); print(a)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (New(a, v);( print(v); print(a)))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (New(a, v);( print(v); print(a)))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: New(a, v)( print(v); print(a))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: New(a, v)( print(v); print(a))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: ( print(v); print(a))
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: ( print(v); print(a))
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(v) print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(v) print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int)]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int)]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: 
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int), (2, Ref(int) )]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: 
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int), (2, Ref(int) )]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: (Ref(int)  v;(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a)))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)(Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (Ref(Ref(int) )  a;(New(a, v);( print(v); print(a))))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: Ref(Ref(int) )  a(New(a, v);( print(v); print(a)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: Ref(Ref(int) )  a(New(a, v);( print(v); print(a)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (New(a, v);( print(v); print(a)))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (New(a, v);( print(v); print(a)))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: New(a, v)( print(v); print(a))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: New(a, v)( print(v); print(a))
+symTable: a=(0, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: ( print(v); print(a))
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: ( print(v); print(a))
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(v) print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(v) print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int)]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack:  print(a)
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int)]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: 
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int), (2, Ref(int) )]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+
+exeStack: 
+symTable: a=(2, Ref(int) )
+v=(1, int)
+Out:[(1, int), (2, Ref(int) )]
+FileTable:
+Heap: {1=20, 2=(1, int)}
+

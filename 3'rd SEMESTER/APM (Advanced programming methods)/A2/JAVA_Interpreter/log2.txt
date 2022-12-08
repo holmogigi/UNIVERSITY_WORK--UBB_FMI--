@@ -1,0 +1,123 @@
+exeStack: (int a;(int b;(a = 2+3*5;(b = a+1; print(b)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int a(int b;(a = 2+3*5;(b = a+1; print(b))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int a(int b;(a = 2+3*5;(b = a+1; print(b))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (int b;(a = 2+3*5;(b = a+1; print(b))))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (int b;(a = 2+3*5;(b = a+1; print(b))))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int b(a = 2+3*5;(b = a+1; print(b)))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int b(a = 2+3*5;(b = a+1; print(b)))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (a = 2+3*5;(b = a+1; print(b)))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (a = 2+3*5;(b = a+1; print(b)))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: a = 2+3*5(b = a+1; print(b))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: a = 2+3*5(b = a+1; print(b))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (b = a+1; print(b))
+symTable: a=17
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (b = a+1; print(b))
+symTable: a=17
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: b = a+1 print(b)
+symTable: a=17
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: b = a+1 print(b)
+symTable: a=17
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(b)
+symTable: a=17
+b=18
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(b)
+symTable: a=17
+b=18
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: a=17
+b=18
+Out:[18]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: a=17
+b=18
+Out:[18]
+FileTable:
+Heap: {}
+

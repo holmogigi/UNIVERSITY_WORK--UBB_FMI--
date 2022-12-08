@@ -1,0 +1,837 @@
+exeStack: (int v;(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 4(While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 4(While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=0
+Out:[4, 3, 2, 1, 0]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=0
+Out:[4, 3, 2, 1, 0]
+FileTable:
+Heap: {}
+
+exeStack: (int v;(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 4(While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 4(While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=0
+Out:[4, 3, 2, 1, 0]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=0
+Out:[4, 3, 2, 1, 0]
+FileTable:
+Heap: {}
+
+exeStack: (int v;(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 4;(While(v > 0) {( print(v);v = v-1)} ; print(v)))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 4(While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 4(While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (While(v > 0) {( print(v);v = v-1)} ; print(v))
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=4
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=3
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=2
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: ( print(v);v = v-1)While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: v = v-1While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=1
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: While(v > 0) {( print(v);v = v-1)}  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=0
+Out:[4, 3, 2, 1]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=0
+Out:[4, 3, 2, 1, 0]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=0
+Out:[4, 3, 2, 1, 0]
+FileTable:
+Heap: {}
+

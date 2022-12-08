@@ -1,0 +1,222 @@
+exeStack: (Ref(int)  v;(New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: ( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack:  print(ReadHeap(v))(WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack:  print(ReadHeap(v))(WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack: (WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack: WriteHeap(v, 30) print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack: WriteHeap(v, 30) print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack:  print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=30}
+
+exeStack:  print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=30}
+
+exeStack: 
+symTable: v=(1, int)
+Out:[20, 35]
+FileTable:
+Heap: {1=30}
+
+exeStack: 
+symTable: v=(1, int)
+Out:[20, 35]
+FileTable:
+Heap: {1=30}
+
+exeStack: (Ref(int)  v;(New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: Ref(int)  v(New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (New(v, 20);( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5))))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: New(v, 20)( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(0, int)
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: ( print(ReadHeap(v));(WriteHeap(v, 30); print(ReadHeap(v)+5)))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack:  print(ReadHeap(v))(WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack:  print(ReadHeap(v))(WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[]
+FileTable:
+Heap: {1=20}
+
+exeStack: (WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack: (WriteHeap(v, 30); print(ReadHeap(v)+5))
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack: WriteHeap(v, 30) print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack: WriteHeap(v, 30) print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=20}
+
+exeStack:  print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=30}
+
+exeStack:  print(ReadHeap(v)+5)
+symTable: v=(1, int)
+Out:[20]
+FileTable:
+Heap: {1=30}
+
+exeStack: 
+symTable: v=(1, int)
+Out:[20, 35]
+FileTable:
+Heap: {1=30}
+
+exeStack: 
+symTable: v=(1, int)
+Out:[20, 35]
+FileTable:
+Heap: {1=30}
+

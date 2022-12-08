@@ -1,0 +1,63 @@
+exeStack: (int v;(v = 2; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 2; print(v))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(v = 2; print(v))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 2; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (v = 2; print(v))
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=2
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: v=2
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
