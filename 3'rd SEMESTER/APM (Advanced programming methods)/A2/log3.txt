@@ -1,0 +1,137 @@
+exeStack: (bool a;(int v;(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v)))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: bool a(int v;(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: bool a(int v;(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (int v;(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))))
+symTable: a=false
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (int v;(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))))
+symTable: a=false
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v)))
+symTable: a=false
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int v(a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v)))
+symTable: a=false
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v)))
+symTable: a=false
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (a = true;((IF(a) THEN (v = 2) ELSE (v = 3)); print(v)))
+symTable: a=false
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: a = true((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))
+symTable: a=false
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: a = true((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))
+symTable: a=false
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))
+symTable: a=true
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: ((IF(a) THEN (v = 2) ELSE (v = 3)); print(v))
+symTable: a=true
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (IF(a) THEN (v = 2) ELSE (v = 3)) print(v)
+symTable: a=true
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (IF(a) THEN (v = 2) ELSE (v = 3)) print(v)
+symTable: a=true
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 2 print(v)
+symTable: a=true
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: v = 2 print(v)
+symTable: a=true
+v=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: a=true
+v=2
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(v)
+symTable: a=true
+v=2
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: a=true
+v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: a=true
+v=2
+Out:[2]
+FileTable:
+Heap: {}
+

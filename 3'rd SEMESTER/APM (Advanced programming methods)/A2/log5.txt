@@ -1,0 +1,297 @@
+exeStack: (int a;(int b;(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int a(int b;(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int a(int b;(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (int b;(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (int b;(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int b(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: int b(string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))))
+symTable: a=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (string good;(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: string good(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: string good(string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))
+symTable: a=0
+b=0
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))
+symTable: a=0
+b=0
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (string bad;(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))))
+symTable: a=0
+b=0
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: string bad(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))
+symTable: a=0
+b=0
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: string bad(good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))
+symTable: a=0
+b=0
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))
+symTable: a=0
+b=0
+bad=
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (good = GOOD;(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))))
+symTable: a=0
+b=0
+bad=
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: good = GOOD(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))
+symTable: a=0
+b=0
+bad=
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: good = GOOD(bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))
+symTable: a=0
+b=0
+bad=
+good=
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))
+symTable: a=0
+b=0
+bad=
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (bad = BAD;(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))))
+symTable: a=0
+b=0
+bad=
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: bad = BAD(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))
+symTable: a=0
+b=0
+bad=
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: bad = BAD(a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))
+symTable: a=0
+b=0
+bad=
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))
+symTable: a=0
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (a = 7;(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))))
+symTable: a=0
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: a = 7(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))
+symTable: a=0
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: a = 7(b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))
+symTable: a=0
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))
+symTable: a=7
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (b = 6;(IF(a > b) THEN ( print(good)) ELSE ( print(bad))))
+symTable: a=7
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: b = 6(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))
+symTable: a=7
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: b = 6(IF(a > b) THEN ( print(good)) ELSE ( print(bad)))
+symTable: a=7
+b=0
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (IF(a > b) THEN ( print(good)) ELSE ( print(bad)))
+symTable: a=7
+b=6
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: (IF(a > b) THEN ( print(good)) ELSE ( print(bad)))
+symTable: a=7
+b=6
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(good)
+symTable: a=7
+b=6
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack:  print(good)
+symTable: a=7
+b=6
+bad=BAD
+good=GOOD
+Out:[]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: a=7
+b=6
+bad=BAD
+good=GOOD
+Out:[GOOD]
+FileTable:
+Heap: {}
+
+exeStack: 
+symTable: a=7
+b=6
+bad=BAD
+good=GOOD
+Out:[GOOD]
+FileTable:
+Heap: {}
+
