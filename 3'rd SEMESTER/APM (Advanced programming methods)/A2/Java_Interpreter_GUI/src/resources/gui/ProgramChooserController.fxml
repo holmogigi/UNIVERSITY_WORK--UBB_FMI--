@@ -7,13 +7,13 @@
 
 <StackPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProgramChooserController">
     <children>
-        <VBox alignment="CENTER" style="-fx-background-color: #CDACA1;">
+        <VBox alignment="CENTER" style="-fx-background-color: #000027;">
             <children>
                 <ListView fx:id="programsListView" prefHeight="356.0" prefWidth="525.0" style="-fx-background-color: #CCFBFE; -fx-background-radius: 5px;">
                     <VBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                     </VBox.margin></ListView>
-                <Button fx:id="displayButton" alignment="BASELINE_CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#displayProgram" prefHeight="24.0" style="-fx-background-color: #CD8987; -fx-border-color: #6B2737; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="Display program" textAlignment="CENTER" textFill="#6b2737">
+                <Button fx:id="displayButton" alignment="BASELINE_CENTER" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#displayProgram" prefHeight="24.0" style="-fx-background-color: #1E1E1E; -fx-border-color: #1E1E1E; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="Display program" textAlignment="CENTER" textFill="#E3DDE2">
                     <font>
                         <Font name="Berlin Sans FB" size="12.0" />
                     </font>
