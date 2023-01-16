@@ -1,0 +1,147 @@
+
+Id: 1
+exeStack: (int v;(v = 2; print(v)))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: int v(v = 2; print(v))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: int v(v = 2; print(v))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: int v(v = 2; print(v))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: int v(v = 2; print(v))
+symTable: Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: v = 2 print(v)
+symTable: v=0
+Out:[]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
+
+Id: 1
+exeStack: 
+symTable: v=2
+Out:[2]
+FileTable:
+Heap: {}
+
