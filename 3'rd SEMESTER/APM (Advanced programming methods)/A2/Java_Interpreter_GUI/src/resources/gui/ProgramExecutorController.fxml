@@ -7,9 +7,9 @@
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProgramExecutorController">
     <children>
-        <VBox alignment="TOP_CENTER" style="-fx-background-color: #CDACA1;">
+        <VBox alignment="TOP_CENTER" style="-fx-background-color: #000027;">
             <children>
-                <Label alignment="CENTER" lineSpacing="1.0" text="~Number of program states~" textAlignment="CENTER" textFill="#6b2737">
+                <Label alignment="CENTER" lineSpacing="1.0" text="~Number of program states~" textAlignment="CENTER" textFill="#E3DDE2">
                     <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                     </font></Label>
@@ -24,7 +24,7 @@
                     <children>
                         <VBox alignment="TOP_CENTER">
                             <children>
-                                <Label text="Heap" textFill="#6b2737">
+                                <Label text="Heap" textFill="#E3DDE2">
                                     <font>
                                         <Font name="Berlin Sans FB" size="12.0" />
                                     </font>
@@ -42,7 +42,7 @@
                                 <Insets left="5.0" right="5.0" />
                             </HBox.margin>
                             <children>
-                                <Label text="Output" textFill="#6b2737">
+                                <Label text="Output" textFill="#E3DDE2">
                                     <font>
                                         <Font name="Berlin Sans FB" size="12.0" />
                                     </font>
@@ -52,7 +52,7 @@
                         </VBox>
                         <VBox alignment="TOP_CENTER">
                             <children>
-                                <Label text="Files" textFill="#6b2737">
+                                <Label text="Files" textFill="#E3DDE2">
                                     <font>
                                         <Font name="Berlin Sans FB" size="12.0" />
                                     </font>
@@ -72,7 +72,7 @@
                     <children>
                         <VBox alignment="TOP_CENTER">
                             <children>
-                                <Label text="ProgramState IDs" textFill="#6b2737">
+                                <Label text="ProgramState IDs" textFill="#E3DDE2">
                                     <font>
                                         <Font name="Berlin Sans FB" size="12.0" />
                                     </font>
@@ -85,7 +85,7 @@
                         </VBox>
                         <VBox alignment="TOP_CENTER">
                             <children>
-                                <Label text="Symbol Table" textFill="#6b2737">
+                                <Label text="Symbol Table" textFill="#E3DDE2">
                                     <font>
                                         <Font name="Berlin Sans FB" size="12.0" />
                                     </font>
@@ -106,7 +106,7 @@
                         </VBox>
                         <VBox alignment="TOP_CENTER">
                             <children>
-                                <Label text="Execution Stack" textFill="#6b2737">
+                                <Label text="Execution Stack" textFill="#E3DDE2">
                                     <font>
                                         <Font name="Berlin Sans FB" size="12.0" />
                                     </font>
@@ -122,7 +122,7 @@
                         <Insets left="5.0" right="5.0" />
                     </VBox.margin>
                 </HBox>
-                <Button fx:id="runOneStepButton" alignment="TOP_CENTER" mnemonicParsing="false" onMouseClicked="#runOneStep" style="-fx-background-color: #CD8987; -fx-border-color: #6B2737; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Run one step" textFill="#6b2737">
+                <Button fx:id="runOneStepButton" alignment="TOP_CENTER" mnemonicParsing="false" onMouseClicked="#runOneStep" style="-fx-background-color: #1E1E1E; -fx-border-color: #1E1E1E; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="Run one step" textFill="#E3DDE2">
                     <font>
                         <Font name="Berlin Sans FB" size="12.0" />
                     </font>
