@@ -9,7 +9,7 @@
     <children>
         <VBox alignment="TOP_CENTER" style="-fx-background-color: #000027;">
             <children>
-                <Label alignment="CENTER" lineSpacing="1.0" text="~Number of program states~" textAlignment="CENTER" textFill="#000000">
+                <Label alignment="CENTER" lineSpacing="1.0" text="Number of program states" textAlignment="CENTER" textFill="#E3DDE2">
                     <font>
                         <Font name="Berlin Sans FB" size="14.0" />
                     </font></Label>
