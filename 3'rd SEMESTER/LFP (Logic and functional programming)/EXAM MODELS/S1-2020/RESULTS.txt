@@ -1,0 +1,147 @@
+I.1
+; A. Fie următoarea definiţie de funcţie ȋn LISP
+
+(DEFUN F(L1 L2)
+  (APPEND (F (CAR L1) L2)
+    (COND
+      ((NULL L1) (CDR L2))
+      (T (LIST (F (CAR L1) L2) (CAR L2)))
+    )
+  )
+)
+
+; Rescrieți această definiție pentru a evita dublul apel recursiv (F (CAR L1) L2), fără a redefini logica clauzelor și fără a folosi
+; o funcție auxiliară. Nu folosiți SET, SETQ, SETF. Justificați răspunsul.
+
+
+(defun f1(l1 l2)
+  ((lambda (x) 
+    (append x
+      (cond
+        ((null l1) (cdr l2))
+        (t (list x (car l2)))
+      )
+     )
+    )(f1 (car l1) l2)
+  )
+)
+
+I.2
+% A. Fie L o listă numerică şi următoarea definiţie de predicat PROLOG f(list, integer),
+%    având modelul de flux (i, o):
+
+f([], 0).
+f([H|T],S):-f(T,S1),S1<H,!,S is H.
+f([_|T],S):-f(T,S1),S is S1.
+
+% Rescrieți această definiție pentru a evita apelul recursiv f(T,S) în ambele clauze, fără a redefini logica clauzelor. Justificați
+% răspunsul.
+
+
+f1([],0).
+f1([H|T],S):-
+    f1(T,S1),
+    aux(S1,H,S).
+    
+aux(S1,H,H):-
+    S1 < H.
+aux(S1,_,S1).
+
+II.
+% B. Dându-se o listă formată din numere întregi, să se genereze ȋn PROLOG lista permutărilor având proprietatea
+%   că valoarea absolută a diferenţei dintre două valori consecutive din permutare este <=3.
+%   Se vor scrie modelele matematice și modelele de flux pentru predicatele folosite.
+% Exemplu- pentru lista L=[2,7,5] ⇒ [[2,5,7], [7,5,2]] (nu neapărat în această ordine)
+
+% insert(elem, l1l2...ln) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E: element, R: result list)
+% (i,i,o)
+
+
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|R]):-
+    insert(E,T,R).
+
+
+% perm(l1l2...ln) = 
+% = [], if n = 0 
+% = insert(l1, perm(l2...ln)), otherwise
+
+% perm(L:list, R: result list)
+% (i,o)
+
+perm([],[]).
+perm([H|T],R1):-
+    perm(T,R),
+    insert(H,R,R1).
+
+% absDiff(a,b) = 
+% = a - b, if a >= b
+% = b - a, otherwise
+
+absDiff(A,B,R):-
+    A >= B,
+    R is A - B.
+absDiff(A,B,R):-
+    A < B,
+    R is B - A.
+
+% checkAbsDiff(l1l2...ln) = 
+% = true, if n = 2 and absDiff(l1,l2) <= 3
+% = checkAbsDiff(l2...ln), if absDiff(l1,l2) <= 3
+% = false, otherwise
+
+% checkAbsDiff(L:list)
+% (i)
+
+checkAbsDiff([H1,H2]):-
+    absDiff(H1,H2,R),
+    R =< 3.
+checkAbsDiff([H1,H2|T]):-
+    absDiff(H1,H2,R),
+    R =< 3,
+    checkAbsDiff([H2|T]).
+
+
+% oneSol(l1l2...ln, r1r2...rm) = 
+% = perm(l1l2...ln, r1r2...rm), if checkAbsDiff(l1l2...ln) = true
+
+oneSol(L,R):-
+    perm(L,R),
+    checkAbsDiff(R).
+
+%allSols(N:number, R:result list)
+% (i,o)
+
+allSols(L,R):-
+    findall(RPartial,oneSol(L,RPartial),R).
+
+III.
+; C. Se consideră o listă neliniară. Să se scrie o funcţie LISP care să aibă ca rezultat
+;  lista iniţială din care au fost eliminați toți atomii numerici multipli de 3.
+;  Se va folosi o funcție MAP.
+
+; Exemplu a) dacă lista este (1 (2 A (3 A)) (6)) => (1 (2 A (A)) NIL)
+;         b) dacă lista este (1 (2 (C))) => (1 (2 (C)))
+
+
+; removeElem(l, elem) = 
+; = nil, if l is number and l % 3 == 0
+; = list(l), if l is an atom
+; = removeElem(l1, elem) U ... U removeElem(ln, elem), otherwise (l = l1l2...ln)
+
+(defun removeElem(l)
+  (cond
+    ((and (numberp l) (equal (mod l 3) 0)) nil) 
+    ((atom l) (list l))
+    (t (list (mapcan #'removeElem l)))
+  )
+)
+
+
+(defun main(l)
+  (car (removeElem l))
+)

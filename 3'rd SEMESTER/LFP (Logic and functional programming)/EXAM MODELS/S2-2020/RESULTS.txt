@@ -1,0 +1,145 @@
+I.1
+; A. Fie următoarea definiţie de funcţie LISP
+(DEFUN Fct(F L)
+  (COND
+    ((NULL L) NIL)
+    ((FUNCALL F (CAR L)) (CONS (FUNCALL F (CAR L)) (Fct F (CDR L))))
+  (T NIL)
+  )
+)
+
+; Rescrieți această definiție pentru a evita dublul apel recursiv (FUNCALL F (CAR L)), fără a redefini logica clauzelor și fără a
+; folosi o funcție auxiliară. Nu folosiți SET, SETQ, SETF. Justificați răspunsul.
+
+
+
+(defun fct(f l)
+  ((lambda (a)
+    (cond
+      ((null l) nil)
+      (a (cons a (fct f (cdr l))))
+      (t nil)
+     )
+    ) (FUNCALL f (car l))
+  )
+)
+
+
+I.2
+% B. Fie L o listă numerică şi următoarea definiţie de predicat PROLOG f(list, integer),
+%    având modelul de flux (i, o):
+
+f([], -1).
+f([H|T],S):-H>0, f(T,S1),S1<H,!,S is H.
+f([_|T],S):-f(T,S1), S is S1.
+
+% Rescrieți această definiție pentru a evita apelul recursiv f(T,S) în ambele clauze, fără a redefini logica clauzelor. Justificați
+% răspunsul.
+
+f1([], -1).
+f1([H|T],S):-
+    H>0,
+    f1(T,S1),
+    aux(S1,H,S).
+
+aux(S1,H,H):-
+    S1 < H.
+aux(S1,_,S1).
+
+
+II.
+% B. Să se scrie un program PROLOG care generează lista aranjamentelor de k elemente dintr-o listă
+%    de numere întregi, având produs P dat. Se vor scrie modelele matematice și modelele de flux
+%    pentru predicatele folosite.
+
+% Exemplu- pentru lista [2, 5, 3, 4, 10], k=2 şi P=20 ⇒ [[2,10],[10,2],[5,4],[4,5]] (nu neapărat în această ordine)
+
+
+% insert(l1l2...ln, elem) = 
+% = {elem} U l1l2...ln
+% = {l1} U insert(l2...ln, elem)
+
+% insert(L:list, E:element, R:list)
+% (i,i,o)
+
+insert(L,E,[E|L]).
+insert([H|T],E,[H|R]):-
+    insert(T,E,R).
+
+
+% arr(l1l2...ln, k) = 
+% = l1, if k = 1
+% = arr(l1l2...ln, k), if k >= 1
+% = insert(l1, arr(l2...ln, k - 1)), if k > 1
+
+% arr(L:list, K:number, R:list)
+% (i,i,o)
+
+arr([H|_],1,[H]).
+arr([_|T],K,R):-
+    arr(T,K,R).
+arr([H|T],K,R1):-
+    K > 1,
+    K1 is K - 1,
+    arr(T,K1,R),
+    insert(R,H,R1).
+
+% productElems(l1l2...ln) = 
+% = 1, if n = 0
+% = l1 * productElems(l2...ln), otherwise
+
+% productElems(L:list, R:number)
+% (i,o)
+
+productElems([],1).
+productElems([H|T],R1):-
+    productElems(T,R),
+    R1 is H*R.
+
+% checkProduct(l1l2...ln, v) = 
+% = true, if productElems(l1l2...ln) = v
+% = false, otherwise
+
+checkProduct(L,V):-
+    productElems(L,RP),
+    RP = V.
+
+% oneSol(L:list, K:number, V:number, R:list)
+% (i,i,o)
+
+oneSol(L,K,V,R):-
+    arr(L,K,R),
+    checkProduct(R,V).
+
+% allSols(L:list, K:number, V:number, R:result list)
+% (i,i,i,o)
+
+allSols(L,K,V,R):-
+    findall(RPartial,oneSol(L,K,V,RPartial),R).
+
+
+
+III
+; C. Un arbore n-ar se reprezintă în LISP astfel ( nod subarbore1 subarbore2 .....)
+; Se cere să se înlocuiască nodurile de pe nivelurile impare din arbore cu o valoare e dată. Nivelul rădăcinii se consideră a fi
+; 0. Se va folosi o funcție MAP.
+; Exemplu pentru arborele (a (b (g)) (c (d (e)) (f))) şi e=h => (a (h (g)) (h (d (h)) (h)))
+
+
+; replaceNodesFromLevel(l, elem, level) = 
+; = elem, if l is an atom and level % 2 == 1
+; = l, if l is an atom
+; = replaceNodesFromLevel(l1, elem, level + 1) U ... U replaceNodesFromLevel(ln, elem, level + 1), otherwise where l = l1l2...ln
+
+
+(defun replaceNodesFromLevel(l elem level)
+  (cond
+    ((and (atom l) (equal (mod level 2) 1)) elem)
+    ((atom l) l)
+    (t (mapcar #' (lambda (a) (replaceNodesFromLevel a elem (+ level 1))) l))
+  )
+)
+
+(defun main(l elem)
+  (replaceNodesFromLevel l elem -1)
+)
