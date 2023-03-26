@@ -1,0 +1,58 @@
+.hover-div
+{
+    width: 300px;
+    height: 300px;
+    background-image: url('download.jfif');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+.hover-div:hover
+{
+    background-image: url('CBUM.jpg');
+}
+
+
+
+
+
+.rotate-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: transform 1s ease-in-out, left 1s ease-in-out;
+}
+
+.rotate-div:hover {
+    transform: rotate(360deg);
+    left: calc(100vw - 200px);
+}
+
+
+/*
+.rotate-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.rotate-div:hover
+{
+    animation: slide 2s forwards;
+    animation-delay: 0s;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(100vw - 200px));
+    }
+}
+
+ */
