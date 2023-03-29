@@ -1,0 +1,838 @@
+/*I am very sorry for the next 2 lines*/
+*{
+    font-family: "Comic Sans MS", serif}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+}
+
+.searchBar {
+    position: absolute;
+    top: 18px;
+    left: 540px;
+    background: white;
+    border-radius: 500px;
+    color: dodgerblue;
+}
+
+.searchbar input{
+    border: 1px solid dodgerblue;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    position: absolute;
+    width: 613px;
+    height: 39px;
+    background: transparent;
+}
+
+.searchbar button {
+    position: absolute;
+    left: 609px;
+    width: 92px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    height: 39px;
+    border: transparent;
+    border-radius: 1px;
+    background-image: url("Images/Search_Bar_Icon.png");
+    background-size: 100%;
+}
+
+.profile {
+    position: absolute;
+    left: 1380px;
+    top: 28px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.profiles button {
+    background-image: url("Images/default_user_profile_pic_64sq.jpg");
+    background-size: 100%;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 1339px;
+    top: 20px;
+    border: transparent;
+}
+
+.bell button {
+    background-image: url("Images/bell.png");
+    background-size: 100%;
+    height: 26px;
+    width: 28px;
+    top: 22px;
+    border: transparent;
+    position: absolute;
+    left: 1468px;
+}
+
+.mail {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    top: 29px;
+    left: 1577px;
+
+}
+
+.mails button {
+    background-image: url("Images/open_mail.png");
+    background-size: 100%;
+    border: transparent;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: 1540px;
+    top: 20px;
+}
+
+.small_mail {
+    position: fixed;
+    left: 343px;
+    top: 89px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.small_mail button {
+    background-image: url("Images/small_mail_pic.png");
+    position: fixed;
+    background-size: 100%;
+    border: transparent;
+    left: 322px;
+    top: 93px;
+    width: 15px;
+    height: 10px;
+}
+
+.news {
+    position: fixed;
+    left: 400px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.finance {
+    position: fixed;
+    left: 465px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sports {
+    position: fixed;
+    left: 550px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.entertainment {
+    position: fixed;
+    left: 626px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.life {
+    position: fixed;
+    left: 755px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.shopping {
+    position: fixed;
+    left: 815px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.yahoo_plus {
+    position: fixed;
+    left: 905px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.more {
+    position: fixed;
+    left: 1007px;
+    top: 87px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#trending_box{
+    border-radius: 2px;
+    width: 8px;
+    height: 15px;
+    background: blueviolet;
+    position: fixed;
+    left: 1252px;
+    top: 141px;
+}
+
+.trending{
+    position: fixed;
+    left: 1267px;
+    top: 137px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trending_rows {
+    position: fixed;
+    left: 1220px;
+    top: 155px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ol li{
+    padding: 4px;
+}
+
+li::before {
+    content: counter(li);
+    color:blueviolet;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li {
+    list-style: none;
+    counter-increment: li;
+}
+
+ol{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    counter-reset: li;
+}
+
+#weather_box{
+    border-radius: 2px;
+    width: 8px;
+    height: 15px;
+    background: blueviolet;
+    position: fixed;
+    left: 1252px;
+    top: 345px;
+}
+
+.weather-text{
+    position: fixed;
+    left:1268px;
+    top: 340px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.city{
+    position: fixed;
+    left: 1480px;
+    top:333px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.city_logo{
+    position: fixed;
+    left: 1558px;
+    top:343px;
+}
+
+.Today{
+    position: fixed;
+    left: 1264px;
+    top: 362px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Today_Logo{
+    position: fixed;
+    left: 1263px;
+    top:398px;
+}
+
+
+.Tue{
+    position: fixed;
+    left: 1358px;
+    top: 362px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Tue_Logo{
+    position: fixed;
+    left: 1351px;
+    top:398px;
+}
+
+.Wed{
+    position: fixed;
+    left: 1445px;
+    top: 362px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Wed_Logo{
+    position: fixed;
+    left: 1439px;
+    top:399px;
+}
+
+.Thu{
+    position: fixed;
+    left: 1537px;
+    top: 362px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Thu_Logo{
+    position: fixed;
+    left: 1529px;
+    top:399px;
+}
+
+.today_degress{
+    position: fixed;
+    left: 1257px;
+    top: 445px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tue_degress{
+    position: fixed;
+    left: 1347px;
+    top: 445px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wed_degress{
+    position: fixed;
+    left: 1437px;
+    top: 445px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.thu_degress{
+    position: fixed;
+    left: 1526px;
+    top: 445px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.seeMore{
+    color: blue;
+    position: fixed;
+    left: 1258px;
+    top: 466px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.AccuWeather{
+    position: fixed;
+    left: 1480px;
+    top: 461px;
+}
+
+#scoreboard_box{
+    border-radius: 2px;
+    width: 8px;
+    height: 15px;
+    background: blueviolet;
+    position: fixed;
+    left: 1252px;
+    top: 525px;
+}
+
+.Scoreboard_text{
+    position: fixed;
+    left:1268px;
+    top: 520px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Trending{
+    position: fixed;
+    left: 1490px;
+    top:526px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.TrendingLogo{
+    position: fixed;
+    left: 1547px;
+    top:523px;
+}
+
+.Yesterday{
+    position: fixed;
+    left: 1252px;
+    top: 550px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Today_text{
+    position: fixed;
+    left: 1329px;
+    top: 550px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Tomorrow{
+    position: fixed;
+    left: 1384px;
+    top: 550px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#today_box{
+    border-radius: 1px;
+    width: 34px;
+    height: 4px;
+    background: blueviolet;
+    position: fixed;
+    left: 1330px;
+    top: 569px;
+}
+
+.ken_logo{
+    position: fixed;
+    top: 578px;
+    left: 1252px;
+}
+
+.indi_logo{
+    position: fixed;
+    top: 605px;
+    left: 1252px;
+}
+
+.ken_text{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 580px;
+    left: 1282px;
+}
+
+.indi_text{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 606px;
+    left: 1282px;
+}
+
+.In_Prog{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 592px;
+    left: 1515px;
+}
+
+.toro_logo{
+    position: fixed;
+    top: 650px;
+    left: 1252px;
+}
+
+.mil_logo{
+    position: fixed;
+    top: 677px;
+    left: 1252px;
+}
+
+.toro_text{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 653px;
+    left: 1282px;
+}
+
+.mil_text{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 680px;
+    left: 1282px;
+}
+
+.toro_score{
+    font-size: 11px;
+    font-weight: bold;
+    position: fixed;
+    top: 653px;
+    left: 1402px;
+}
+
+.mil_score{
+    font-size: 11px;
+    font-weight: bold;
+    position: fixed;
+    top: 680px;
+    left: 1402px;
+}
+
+.second_final{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 666px;
+    left: 1515px;
+}
+
+.miami_logo{
+    position: fixed;
+    top: 725px;
+    left: 1252px;
+}
+
+.pistons_logo{
+    position: fixed;
+    top: 752px;
+    left: 1252px;
+}
+
+.miami_text{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 728px;
+    left: 1282px;
+}
+
+.det_text{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 754px;
+    left: 1282px;
+}
+
+.miami_score{
+    font-size: 11px;
+    font-weight: bold;
+    position: fixed;
+    top: 728px;
+    left: 1402px;
+}
+
+.det_score{
+    font-size: 11px;
+    font-weight: bold;
+    position: fixed;
+    top: 754px;
+    left: 1402px;
+}
+
+.third_final{
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 738px;
+    left: 1515px;
+}
+
+.MoreScores{
+    color: blue;
+    position: fixed;
+    left: 1252px;
+    top: 792px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#horoscope_box{
+    border-radius: 2px;
+    width: 8px;
+    height: 15px;
+    background: blueviolet;
+    position: fixed;
+    left: 1252px;
+    top: 840px;
+}
+
+.horoscope-text{
+    position: fixed;
+    top: 835px;
+    left: 1268px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Pisces{
+    position: fixed;
+    top: 839px;
+    left: 1503px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.horoscope_arrow{
+    position: fixed;
+    top: 835px;
+    left: 1547px;
+}
+
+.pisces_pic{
+    position: fixed;
+    top: 870px;
+    left: 1252px;
+}
+
+.pisces_txt{
+    position: fixed;
+    top: 870px;
+    left: 1335px;
+    font-size: 12px;
+}
+
+
+.cover_big_news{
+    border-radius: 3px;
+    position: fixed;
+    left: 322px;
+    top: 141px;
+}
+
+.blurred_image{
+    position: fixed;
+    top: 138px;
+    left: 820px;
+    background-image: url("Images/7f5a6b20-cd60-11ed-9b3e-632b1c3250f0.webp");
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    height: 274px;
+    width: 390px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big_title_blur{
+    -webkit-text-stroke: 1px black;
+    position: fixed;
+    top: 170px;
+    left: 882px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.desc_blur{
+    font-weight: bold;
+    position: fixed;
+    top: 290px;
+    left: 882px;
+    font-size: 14px;
+}
+
+.sub_title_blur{
+    -webkit-text-stroke: 1px black;
+    position: fixed;
+    top: 358px;
+    left: 882px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.first_small_pic{
+    border-radius: 3px;
+    position: fixed;
+    left: 322px;
+    top: 422px;
+}
+
+.first_small_text{
+    position: fixed;
+    left: 322px;
+    top: 520px;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+.second_small_pic{
+    border-radius: 3px;
+    position: fixed;
+    top: 422px;
+    left: 503px;
+}
+
+.second_small_text{
+    position: fixed;
+    left: 503px;
+    top: 520px;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+.third_small_pic{
+    border-radius: 3px;
+    position: fixed;
+    top: 422px;
+    left: 683px;
+}
+
+.third_small_text{
+    position: fixed;
+    left: 684px;
+    top: 520px;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+.forth_small_pic{
+    border-radius: 3px;
+    position: fixed;
+    top: 422px;
+    left:863px;
+}
+
+.forth_small_text{
+    position: fixed;
+    left: 863px;
+    top: 520px;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+.fifth_small_pic{
+    border-radius: 3px;
+    position: fixed;
+    top: 422px;
+    left: 1042px;
+}
+
+.fifth_small_text{
+    position: fixed;
+    left: 1041px;
+    top: 520px;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+#storiess_box{
+    border-radius: 2px;
+    width: 8px;
+    height: 15px;
+    background: blueviolet;
+    position: fixed;
+    left: 322px;
+    top: 590px;
+}
+
+.sfy{
+    position: fixed;
+    left: 338px;
+    top: 585px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.lowerStoryFirstPic{
+    border-radius: 3px;
+    position: fixed;
+    left: 322px;
+    top: 630px;
+}
+
+.Entertainment_small{
+    position: fixed;
+    top: 629px;
+    left: 588px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.VIBE{
+    position: fixed;
+    top: 631px;
+    left: 685px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.first_bellow_story_title{
+    position: fixed;
+    font-size: 17px;
+    font-weight: bold;
+    left: 589px;
+    top: 648px;
+}
+
+.first_bellow_story_desc{
+    position: fixed;
+    top: 705px;
+    left: 589px;
+    font-size: 12px;
+}
+
+.lowerStorySecondPic{
+    border-radius: 3px;
+    position: fixed;
+    left: 322px;
+    top: 790px;
+}
+
+.Ad{
+    position: fixed;
+    top: 790px;
+    left: 588px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Aporia{
+    position: fixed;
+    top: 791px;
+    left: 615px;
+    font-size: 10px;
+}
+
+.second_bellow_story_title{
+    position: fixed;
+    font-size: 17px;
+    font-weight: bold;
+    left: 588px;
+    top: 810px;
+}
+
+.second_bellow_story_desc{
+    position: fixed;
+    top: 838px;
+    left: 588px;
+    font-size: 12px;
+}
