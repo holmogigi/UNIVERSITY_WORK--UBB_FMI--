@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf89c07uwVESK+lNA44x9awAAAAACAAAAAAAQZgAAAAEAACAAAABwBRXiPL1W+slnuacMxn4GQoWJI9iP6y+gWBdrXfS1fwAAAAAOgAAAAAIAACAAAADkHKjktPz6BO5h4pIA3kkS+NBXj7y//lngZ1HomP2f/oAAAADkOd+H5e1CZ7FL74GtepiCoAvQ+Lu5D82SEJ3GocP4nzKHVG2wzkIewFFats3tyBN5B44KP+aZT3Crpy4m52lgriqw2uKLGloSR0O+VFrm3laENIKePeCQ60TNc+A8a+cLOTOzwBWe9VSUeLzjP8Fxsd0DNLI5I4zJoXyM9aM9LEAAAABY4H8MMYM0REbJ6yC3F/oMwmBPoAqM616QeU+GnjUEB4NCtkpY4oLuOVqWVj0RSF1FMK49iyGbMbMHh/S+GM4Y</EncryptedPassword>
+    <History>True|2023-04-09T18:15:31.6883964Z;True|2023-04-09T12:54:27.8373888+03:00;True|2023-04-09T12:47:36.3196424+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:mppdbserver12.database.windows.net,1433%3bInitial Catalog=MPP_db%3bUser Id=holmogigi%40mppdbserver12%3bPassword=Password.12</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="MPP.Database.BodyBuildersDatabasesContext">
+      <Value>Data Source=tcp:mppdbserver12.database.windows.net,1433%3bInitial Catalog=MPP_db%3bUser Id=holmogigi%40mppdbserver12%3bPassword=Password.12</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
