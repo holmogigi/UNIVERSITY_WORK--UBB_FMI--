@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Sortable Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+<table id="myTable">
+    <thead>
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        <th>Column 4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>C1R1</td>
+        <td>C2R1</td>
+        <td>C3R1</td>
+        <td>C4R1</td>
+    </tr>
+    <tr>
+        <td>C1R2</td>
+        <td>C2R2</td>
+        <td>C3R2</td>
+        <td>C4R2</td>
+    </tr>
+    <tr>
+        <td>C1R3</td>
+        <td>C2R3</td>
+        <td>C3R3</td>
+        <td>C4R3</td>
+    </tr>
+    <tr>
+        <td>C1R4</td>
+        <td>C2R4</td>
+        <td>C3R4</td>
+        <td>C4R4</td>
+    </tr>
+    <tr>
+        <td>C1R5</td>
+        <td>C2R5</td>
+        <td>C3R5</td>
+        <td>C4R5</td>
+    </tr>
+    <tr>
+        <td>C1R6</td>
+        <td>C2R6</td>
+        <td>C3R6</td>
+        <td>C4R6</td>
+    </tr>
+    <tr>
+        <td>C1R7</td>
+        <td>C2R7</td>
+        <td>C3R7</td>
+        <td>C4R7</td>
+    </tr>
+    <tr>
+        <td>C1R8</td>
+        <td>C2R8</td>
+        <td>C3R8</td>
+        <td>C4R8</td>
+    </tr>
+    <tr>
+        <td>C1R9</td>
+        <td>C2R9</td>
+        <td>C3R9</td>
+        <td>C4R9</td>
+    </tr>
+    <tr>
+        <td>C1R10</td>
+        <td>C2R10</td>
+        <td>C3R10</td>
+        <td>C4R10</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <th>Footer 1</th>
+        <th>Footer 2</th>
+        <th>Footer 3</th>
+        <th>Footer 4</th>
+    </tr>
+    </tfoot>
+</table>
+
+<script>
+    $(document).ready(function()
+    {
+
+        $('thead th').click(function()
+        {
+            let table = $(this).closest('table');
+            let index = $(this).index();
+            let rows = table.find('tbody tr').get();
+            let ascending = true;
+            if ($(this).hasClass('sorted')) {
+                ascending = false;
+            }
+            rows.sort(function(a, b) {
+                let aValue = $(a).find('td').eq(index).text();
+                let bValue = $(b).find('td').eq(index).text();
+                if (ascending) {
+                    return aValue.localeCompare(bValue);
+                } else {
+                    return bValue.localeCompare(aValue);
+                }
+            });
+            $(this).siblings().removeClass('sorted');
+            $(this).toggleClass('sorted');
+            $.each(rows, function(index, row) {
+                table.children('tbody').append(row);
+            });
+        });
+
+        $('tfoot th').click(function()
+        {
+            let index = $(this).index();
+            let nextIndex = (index + 1) % 4;
+            let rows = $("#myTable tbody tr");
+            rows.each(function() {
+                let temp = $(this).find("td:eq(" + index + ")").text();
+                $(this).find("td:eq(" + index + ")").text($(this).find("td:eq(" + nextIndex + ")").text());
+                $(this).find("td:eq(" + nextIndex + ")").text(temp);
+            });
+        });
+    });
+</script>
+</body>
+</html>
