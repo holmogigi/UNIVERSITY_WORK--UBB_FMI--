@@ -5,8 +5,6 @@ from faker import Faker
 from multiprocessing import Process
 
 fake = Faker()
-MIN_ROLE_LEVEL = 1
-MAX_ROLE_LEVEL = 100
 
 BODYBUILDER_ROLES_COUNT = 1_000_000
 COACHES_COUNT = 1_000_000
