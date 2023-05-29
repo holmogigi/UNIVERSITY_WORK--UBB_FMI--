@@ -1,0 +1,11 @@
+#index-page, #login-form, #addFormDiv, #removeFormDiv, #viewLogsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peni{
+    justify-content: center;
+    align-items: center;
+    color: rgb(26, 54, 54);
+}
