@@ -1,0 +1,28 @@
+﻿Alphabet:
+
+a. Upper (A-Z) and lower case letters (a-z) of the English alphabet
+b. Decimal digits (0-9);
+
+--------------------------------
+
+Lexic:
+
+a. Special symbols, representing:
+- operators + - * / : < <= = == >= ++ -- and or 
+- separators [ ] { } ; space newline " ,
+- reserved words:
+    list string do else if int let while in out stop
+
+b. identifiers
+    <identifier> ::= letter{(letter|digit)}
+    <letter> ::= "a"| "b" | ... | "z" | "A" | "B" | . ..| "Z"
+    <digit> ::= "0" | "1" |...| "9"
+
+c. constants
+1. integer:
+      <noconst> ::= ["+"|"-"] non_zero_digit {digit} | "0"
+      non_zero_digit = "1"|"2"|..|"9"
+
+2. string
+      <string> ::= <string> | <string><character>
+      <character> ::= <letter> | <digit>
