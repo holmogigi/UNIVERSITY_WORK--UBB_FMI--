@@ -1,0 +1,14 @@
+~
+let n,sum : int;
+in(n);
+list l(n) : int;
+let i : int;
+i=1;
+while(i<n);
+{
+    in(l[i]);
+    sum=sum+l[i];
+    i++;
+}
+out(sum);
+~

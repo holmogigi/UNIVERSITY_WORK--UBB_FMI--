@@ -1,0 +1,29 @@
+https://github.com/holmogigi/UNIVERSITY_WORK--UBB_FMI--/tree/main/5'th%20SEMESTER/FLCD%20(Formal%20Languages%20and%20Compiler%20Design)/LAB2
+
+Symbol Table: Uses the hash table
+Methods: - Add(self, item) : adds a symbol with a name in the table
+         - GetValuePosition(self, item) : gets the position index of a given item in the table
+
+Hash Table: Implemented using open addressing as a collision resolution
+Methods: - HashFunction(key) : calculating the sum of the unicode of the given key (a string)
+         - Add(self, key, value) : adds a key value pair to the hashtable and uses resize beforehand if the load factor is reached
+         - GetValuePosition(self, key) : gets the value of a given key from the hashtable
+         - ResizeTable(self, size) :if the load factor is reached the resize is called and the hashtable size is doubled also rehashing the table
+
+Scanner: Has reserved words, operators and separators, all stored in lists
+Methods: - IsIdentifier(elem) : regex that returns true or false depending on the input being a indentifier or not
+         - IsConstant(elem) : regex that returns true or false depending on the input being a constant or not
+         - GetReservedWords(self) : returns the list of reserved words
+         - GetSeparators(self) : returns the list of separators
+         - GetOperators(self) : returns the list of operators
+         - GetAllTokens(self) : returns all the lists: separators, operators and reserved words
+         - IsOperator(self, elem) : checks if a element is the operators list
+         - ReadTokens(self) : read the tokens from the Token.in file and add them in the appropiate lists
+         - String(token, tokens, line, i) : adds a given string from the line to to tokens list
+         - Operator(self, token, tokens, line, i) : adds a given operator from the line to the tokens list
+         - Separator(token, tokens, line, i) : adds a given separator from the line to the tokens list
+         - GetTokensFromLine(self, line) : gets all tokens from a given line and appends them to a list
+
+PIF: Has a list for the pairs(tokens and positions) where they are added and printed
+Methods: - Add(self, token, position) : Appends a pair of a token and position to the list
+         - __str__(self) : Prints all pairs in the list

@@ -1,0 +1,25 @@
+~
+let a,b,min : int;
+in(a);
+in(b);
+if(a>b);
+{
+    min=b;
+}
+else;
+{
+    min=a;
+}
+while(min>0);
+{
+    if(a%min==0 and b%min==0);
+    {
+        stop;
+    }
+    else;
+    {
+        min--;
+    }
+}
+out(min);
+~

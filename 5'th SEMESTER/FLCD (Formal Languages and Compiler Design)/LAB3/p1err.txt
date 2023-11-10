@@ -1,0 +1,12 @@
+~
+let n,sum : int;
+in(n);
+let i : int;
+i=1;
+while(i<=n);
+{
+    sum=sum+i;
+    1i++;
+}
+out('sum');
+~

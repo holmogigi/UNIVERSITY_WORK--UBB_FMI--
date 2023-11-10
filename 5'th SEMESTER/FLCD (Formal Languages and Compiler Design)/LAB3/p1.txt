@@ -1,0 +1,21 @@
+~
+let a,b,c : int;
+in(a);
+in(b);
+in(c);
+if (a>b and a>c);
+{
+    out(a);
+    stop;
+}
+if (b>a and b>c);
+{
+    out(b);
+    stop;
+}
+if (c>a and c>b);
+{
+    out(c);
+    stop;
+}
+~
