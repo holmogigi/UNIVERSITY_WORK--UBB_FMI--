@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <TextView
+        android:id="@+id/tvTodoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Example"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tvTodoSets"
+        app:layout_constraintEnd_toStartOf="@+id/cbDone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvTodoSets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sets: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tvTodoReps"
+        app:layout_constraintEnd_toStartOf="@+id/cbDone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoTitle"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvTodoReps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reps: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tvTodoRestTime"
+        app:layout_constraintEnd_toStartOf="@+id/cbDone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoSets"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvTodoRestTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rest Time: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cbDone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTodoReps"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <CheckBox
+        android:id="@+id/cbDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
