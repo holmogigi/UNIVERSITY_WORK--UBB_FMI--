@@ -1,5 +1,5 @@
 states: p,q,r
-alphabet: 0,1
+alphabet: A,B
 initial state: p
 final states: q,r
-transitions: p q 1, q q 0, q r 1, r r 0
+transitions: p q A, q q B, q r A, r r B
