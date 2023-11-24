@@ -1,0 +1,14 @@
+finite_automaton = states, alphabet, initial_state, final_states, transitions ;
+
+states = "states: ", state, {",", state} ;
+state = "p" | "q" | "r" ;
+
+alphabet = "alphabet: ", symbol, {",", symbol} ;
+symbol = "A" | "B" ;
+
+initial_state = "initial state: ", state ;
+
+final_states = "final states: ", state, {",", state} ;
+
+transitions = "transitions: ", transition, {",", transition} ;
+transition = state, state, symbol ;
