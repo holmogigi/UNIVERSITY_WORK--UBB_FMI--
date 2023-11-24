@@ -70,26 +70,26 @@ if __name__ == '__main__':
     print('7 = Check if sequence is accepted')
     print('0 = Exit')
     while True:
-        option = int(input('\n >>'))
-        if option == 1:
+        option = input('\n >>')
+        if option == '1':
             filename = input('filename: ')
             fa = FA(filename)
             fa.ReadFile()
-        elif option == 2:
+        elif option == '2':
             fa.PrintStates()
             print()
-        elif option == 3:
+        elif option == '3':
             fa.PrintAlphabet()
             print()
-        elif option == 4:
+        elif option == '4':
             fa.PrintTransitions()
-        elif option == 5:
+        elif option == '5':
             fa.PrintFinalStates()
             print()
-        elif option == 6:
+        elif option == '6':
             fa.PrintInitialState()
             print()
-        elif option == 7:
+        elif option == '7':
             word = input('Word: ')
             if fa.CheckAccepted(word):
                 print('Word is accepted')
