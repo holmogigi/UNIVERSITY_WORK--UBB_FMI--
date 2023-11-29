@@ -1,0 +1,612 @@
+8:38:39: Executing ':lab3-streams:StreamBenchmarks.main()'...
+
+> Task :lab3-streams:compileJava UP-TO-DATE
+> Task :lab3-streams:processResources NO-SOURCE
+> Task :lab3-streams:classes UP-TO-DATE
+> Task :lab3-streams:compileTestJava UP-TO-DATE
+> Task :lab3-streams:processTestResources NO-SOURCE
+> Task :lab3-streams:testClasses UP-TO-DATE
+> Task :lab3-streams:compileJmhJava
+> Task :lab3-streams:processJmhResources NO-SOURCE
+> Task :lab3-streams:jmhClasses
+
+> Task :lab3-streams:StreamBenchmarks.main()
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleAscendingElemsAvgBM
+
+# Run progress: 0.00% complete, ETA 00:04:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.892 ops/s
+# Warmup Iteration   2: 1.205 ops/s
+# Warmup Iteration   3: 1.036 ops/s
+Iteration   1: 1.058 ops/s
+Iteration   2: 1.078 ops/s
+Iteration   3: 1.045 ops/s
+Iteration   4: 1.041 ops/s
+Iteration   5: 1.017 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleAscendingElemsAvgBM":
+  1.048 �(99.9%) 0.086 ops/s [Average]
+  (min, avg, max) = (1.017, 1.048, 1.078), stdev = 0.022
+  CI (99.9%): [0.962, 1.134] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleAscendingElemsSumBM
+
+# Run progress: 5.56% complete, ETA 00:07:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.085 ops/s
+# Warmup Iteration   2: 1.130 ops/s
+# Warmup Iteration   3: 1.397 ops/s
+Iteration   1: 1.018 ops/s
+Iteration   2: 1.037 ops/s
+Iteration   3: 1.095 ops/s
+Iteration   4: 1.140 ops/s
+Iteration   5: 1.396 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleAscendingElemsSumBM":
+  1.137 �(99.9%) 0.587 ops/s [Average]
+  (min, avg, max) = (1.018, 1.137, 1.396), stdev = 0.152
+  CI (99.9%): [0.551, 1.724] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleAscendingElemsTopTenBM
+
+# Run progress: 11.11% complete, ETA 00:06:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.983 ops/s
+# Warmup Iteration   2: 0.911 ops/s
+# Warmup Iteration   3: 1.051 ops/s
+Iteration   1: 1.091 ops/s
+Iteration   2: 1.052 ops/s
+Iteration   3: 1.096 ops/s
+Iteration   4: 1.107 ops/s
+Iteration   5: 1.121 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleAscendingElemsTopTenBM":
+  1.093 �(99.9%) 0.099 ops/s [Average]
+  (min, avg, max) = (1.052, 1.093, 1.121), stdev = 0.026
+  CI (99.9%): [0.994, 1.192] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleDescendingElemsAvgBM
+
+# Run progress: 16.67% complete, ETA 00:06:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.165 ops/s
+# Warmup Iteration   2: 1.174 ops/s
+# Warmup Iteration   3: 1.056 ops/s
+Iteration   1: 1.059 ops/s
+Iteration   2: 1.037 ops/s
+Iteration   3: 1.067 ops/s
+Iteration   4: 0.979 ops/s
+Iteration   5: 0.982 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleDescendingElemsAvgBM":
+  1.025 �(99.9%) 0.161 ops/s [Average]
+  (min, avg, max) = (0.979, 1.025, 1.067), stdev = 0.042
+  CI (99.9%): [0.863, 1.186] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleDescendingElemsSumBM
+
+# Run progress: 22.22% complete, ETA 00:05:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.111 ops/s
+# Warmup Iteration   2: 0.908 ops/s
+# Warmup Iteration   3: 1.408 ops/s
+Iteration   1: 1.031 ops/s
+Iteration   2: 1.025 ops/s
+Iteration   3: 1.003 ops/s
+Iteration   4: 0.986 ops/s
+Iteration   5: 0.909 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleDescendingElemsSumBM":
+  0.991 �(99.9%) 0.190 ops/s [Average]
+  (min, avg, max) = (0.909, 0.991, 1.031), stdev = 0.049
+  CI (99.9%): [0.801, 1.181] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleDescendingElemsTopTenBM
+
+# Run progress: 27.78% complete, ETA 00:05:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.624 ops/s
+# Warmup Iteration   2: 0.653 ops/s
+# Warmup Iteration   3: 0.627 ops/s
+Iteration   1: 0.673 ops/s
+Iteration   2: 0.676 ops/s
+Iteration   3: 0.684 ops/s
+Iteration   4: 0.669 ops/s
+Iteration   5: 0.676 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleDescendingElemsTopTenBM":
+  0.676 �(99.9%) 0.022 ops/s [Average]
+  (min, avg, max) = (0.669, 0.676, 0.684), stdev = 0.006
+  CI (99.9%): [0.653, 0.698] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleRandomElemsAvgBM
+
+# Run progress: 33.33% complete, ETA 00:05:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.039 ops/s
+# Warmup Iteration   2: 1.192 ops/s
+# Warmup Iteration   3: 1.055 ops/s
+Iteration   1: 1.129 ops/s
+Iteration   2: 0.963 ops/s
+Iteration   3: 1.123 ops/s
+Iteration   4: 1.071 ops/s
+Iteration   5: 1.018 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleRandomElemsAvgBM":
+  1.061 �(99.9%) 0.272 ops/s [Average]
+  (min, avg, max) = (0.963, 1.061, 1.129), stdev = 0.071
+  CI (99.9%): [0.788, 1.333] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleRandomElemsSumBM
+
+# Run progress: 38.89% complete, ETA 00:04:51
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.479 ops/s
+# Warmup Iteration   2: 1.097 ops/s
+# Warmup Iteration   3: 0.997 ops/s
+Iteration   1: 0.991 ops/s
+Iteration   2: 1.020 ops/s
+Iteration   3: 1.034 ops/s
+Iteration   4: 1.070 ops/s
+Iteration   5: 1.047 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleRandomElemsSumBM":
+  1.032 �(99.9%) 0.113 ops/s [Average]
+  (min, avg, max) = (0.991, 1.032, 1.070), stdev = 0.029
+  CI (99.9%): [0.919, 1.145] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.doubleRandomElemsTopTenBM
+
+# Run progress: 44.44% complete, ETA 00:04:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.022 ops/s
+# Warmup Iteration   2: 0.021 ops/s
+# Warmup Iteration   3: 0.021 ops/s
+Iteration   1: 0.021 ops/s
+Iteration   2: 0.022 ops/s
+Iteration   3: 0.022 ops/s
+Iteration   4: 0.021 ops/s
+Iteration   5: 0.020 ops/s
+<JMH had finished, but forked VM did not exit, are there stray running threads? Waiting 24 seconds more...>
+
+Non-finished threads:
+
+Thread[DestroyJavaVM,5,main]
+
+
+
+
+Result "stream_benchmarks.StreamBenchmarks.doubleRandomElemsTopTenBM":
+  0.021 �(99.9%) 0.003 ops/s [Average]
+  (min, avg, max) = (0.020, 0.021, 0.022), stdev = 0.001
+  CI (99.9%): [0.018, 0.024] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleAscendingElemsAvgBM
+
+# Run progress: 50.00% complete, ETA 00:10:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.685 ops/s
+# Warmup Iteration   2: 1.720 ops/s
+# Warmup Iteration   3: 1.739 ops/s
+Iteration   1: 1.710 ops/s
+Iteration   2: 1.717 ops/s
+Iteration   3: 1.737 ops/s
+Iteration   4: 1.738 ops/s
+Iteration   5: 1.740 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleAscendingElemsAvgBM":
+  1.729 �(99.9%) 0.053 ops/s [Average]
+  (min, avg, max) = (1.710, 1.729, 1.740), stdev = 0.014
+  CI (99.9%): [1.676, 1.782] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleAscendingElemsSumBM
+
+# Run progress: 55.56% complete, ETA 00:08:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.655 ops/s
+# Warmup Iteration   2: 1.631 ops/s
+# Warmup Iteration   3: 1.664 ops/s
+Iteration   1: 1.696 ops/s
+Iteration   2: 1.688 ops/s
+Iteration   3: 1.658 ops/s
+Iteration   4: 1.614 ops/s
+Iteration   5: 1.705 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleAscendingElemsSumBM":
+  1.672 �(99.9%) 0.143 ops/s [Average]
+  (min, avg, max) = (1.614, 1.672, 1.705), stdev = 0.037
+  CI (99.9%): [1.529, 1.815] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleAscendingElemsTopTenBM
+
+# Run progress: 61.11% complete, ETA 00:07:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.449 ops/s
+# Warmup Iteration   2: 0.482 ops/s
+# Warmup Iteration   3: 0.506 ops/s
+Iteration   1: 0.503 ops/s
+Iteration   2: 0.484 ops/s
+Iteration   3: 0.461 ops/s
+Iteration   4: 0.495 ops/s
+Iteration   5: 0.484 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleAscendingElemsTopTenBM":
+  0.485 �(99.9%) 0.061 ops/s [Average]
+  (min, avg, max) = (0.461, 0.485, 0.503), stdev = 0.016
+  CI (99.9%): [0.425, 0.546] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleDescendingElemsAvgBM
+
+# Run progress: 66.67% complete, ETA 00:05:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.628 ops/s
+# Warmup Iteration   2: 1.669 ops/s
+# Warmup Iteration   3: 1.646 ops/s
+Iteration   1: 1.644 ops/s
+Iteration   2: 1.583 ops/s
+Iteration   3: 1.743 ops/s
+Iteration   4: 1.741 ops/s
+Iteration   5: 1.723 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleDescendingElemsAvgBM":
+  1.687 �(99.9%) 0.274 ops/s [Average]
+  (min, avg, max) = (1.583, 1.687, 1.743), stdev = 0.071
+  CI (99.9%): [1.413, 1.960] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleDescendingElemsSumBM
+
+# Run progress: 72.22% complete, ETA 00:04:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.649 ops/s
+# Warmup Iteration   2: 1.635 ops/s
+# Warmup Iteration   3: 1.735 ops/s
+Iteration   1: 1.646 ops/s
+Iteration   2: 1.584 ops/s
+Iteration   3: 1.686 ops/s
+Iteration   4: 1.705 ops/s
+Iteration   5: 1.692 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleDescendingElemsSumBM":
+  1.663 �(99.9%) 0.189 ops/s [Average]
+  (min, avg, max) = (1.584, 1.663, 1.705), stdev = 0.049
+  CI (99.9%): [1.474, 1.852] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleDescendingElemsTopTenBM
+
+# Run progress: 77.78% complete, ETA 00:03:26
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.372 ops/s
+# Warmup Iteration   2: 0.358 ops/s
+# Warmup Iteration   3: 0.406 ops/s
+Iteration   1: 0.379 ops/s
+Iteration   2: 0.380 ops/s
+Iteration   3: 0.393 ops/s
+Iteration   4: 0.394 ops/s
+Iteration   5: 0.355 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleDescendingElemsTopTenBM":
+  0.380 �(99.9%) 0.061 ops/s [Average]
+  (min, avg, max) = (0.355, 0.380, 0.394), stdev = 0.016
+  CI (99.9%): [0.319, 0.441] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleRandomElemsAvgBM
+
+# Run progress: 83.33% complete, ETA 00:02:29
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.491 ops/s
+# Warmup Iteration   2: 1.683 ops/s
+# Warmup Iteration   3: 1.562 ops/s
+Iteration   1: 1.655 ops/s
+Iteration   2: 1.734 ops/s
+Iteration   3: 1.433 ops/s
+Iteration   4: 1.562 ops/s
+Iteration   5: 1.554 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleRandomElemsAvgBM":
+  1.588 �(99.9%) 0.438 ops/s [Average]
+  (min, avg, max) = (1.433, 1.588, 1.734), stdev = 0.114
+  CI (99.9%): [1.149, 2.026] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleRandomElemsSumBM
+
+# Run progress: 88.89% complete, ETA 00:01:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.656 ops/s
+# Warmup Iteration   2: 1.685 ops/s
+# Warmup Iteration   3: 1.680 ops/s
+Iteration   1: 1.647 ops/s
+Iteration   2: 1.731 ops/s
+Iteration   3: 1.748 ops/s
+Iteration   4: 1.736 ops/s
+Iteration   5: 1.680 ops/s
+
+
+Result "stream_benchmarks.StreamBenchmarks.primitiveDoubleRandomElemsSumBM":
+  1.708 �(99.9%) 0.165 ops/s [Average]
+  (min, avg, max) = (1.647, 1.708, 1.748), stdev = 0.043
+  CI (99.9%): [1.544, 1.873] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 16.0.2, OpenJDK 64-Bit Server VM, 16.0.2+7-67
+# VM invoker: C:\Program Files (x86)\jdk-16.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 2 s each
+# Measurement: 5 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: stream_benchmarks.StreamBenchmarks.primitiveDoubleRandomElemsTopTenBM
+
+# Run progress: 94.44% complete, ETA 00:00:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.019 ops/s
+# Warmup Iteration   2: <failure>
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.reflect.Array.newInstance(Array.java:78)
+	at java.base/java.util.TimSort.ensureCapacity(TimSort.java:933)
+	at java.base/java.util.TimSort.mergeHi(TimSort.java:806)
+	at java.base/java.util.TimSort.mergeAt(TimSort.java:520)
+	at java.base/java.util.TimSort.mergeForceCollapse(TimSort.java:461)
+	at java.base/java.util.TimSort.sort(TimSort.java:254)
+	at java.base/java.util.Arrays.sort(Arrays.java:1306)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:353)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:503)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.example.streams.ObjectStream.topTenPercent(ObjectStream.java:27)
+	at stream_benchmarks.StreamBenchmarks.primitiveDoubleRandomElemsTopTenBM(StreamBenchmarks.java:319)
+	at stream_benchmarks.jmh_generated.StreamBenchmarks_primitiveDoubleRandomElemsTopTenBM_jmhTest.primitiveDoubleRandomElemsTopTenBM_thrpt_jmhStub(StreamBenchmarks_primitiveDoubleRandomElemsTopTenBM_jmhTest.java:218)
+	at stream_benchmarks.jmh_generated.StreamBenchmarks_primitiveDoubleRandomElemsTopTenBM_jmhTest.primitiveDoubleRandomElemsTopTenBM_Throughput(StreamBenchmarks_primitiveDoubleRandomElemsTopTenBM_jmhTest.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:475)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:458)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+
+
+
+
+# Run complete. Total time: 00:14:59
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                 Mode  Cnt  Score   Error  Units
+StreamBenchmarks.doubleAscendingElemsAvgBM               thrpt    5  1.048 � 0.086  ops/s
+StreamBenchmarks.doubleAscendingElemsSumBM               thrpt    5  1.137 � 0.587  ops/s
+StreamBenchmarks.doubleAscendingElemsTopTenBM            thrpt    5  1.093 � 0.099  ops/s
+StreamBenchmarks.doubleDescendingElemsAvgBM              thrpt    5  1.025 � 0.161  ops/s
+StreamBenchmarks.doubleDescendingElemsSumBM              thrpt    5  0.991 � 0.190  ops/s
+StreamBenchmarks.doubleDescendingElemsTopTenBM           thrpt    5  0.676 � 0.022  ops/s
+StreamBenchmarks.doubleRandomElemsAvgBM                  thrpt    5  1.061 � 0.272  ops/s
+StreamBenchmarks.doubleRandomElemsSumBM                  thrpt    5  1.032 � 0.113  ops/s
+StreamBenchmarks.doubleRandomElemsTopTenBM               thrpt    5  0.021 � 0.003  ops/s
+StreamBenchmarks.primitiveDoubleAscendingElemsAvgBM      thrpt    5  1.729 � 0.053  ops/s
+StreamBenchmarks.primitiveDoubleAscendingElemsSumBM      thrpt    5  1.672 � 0.143  ops/s
+StreamBenchmarks.primitiveDoubleAscendingElemsTopTenBM   thrpt    5  0.485 � 0.061  ops/s
+StreamBenchmarks.primitiveDoubleDescendingElemsAvgBM     thrpt    5  1.687 � 0.274  ops/s
+StreamBenchmarks.primitiveDoubleDescendingElemsSumBM     thrpt    5  1.663 � 0.189  ops/s
+StreamBenchmarks.primitiveDoubleDescendingElemsTopTenBM  thrpt    5  0.380 � 0.061  ops/s
+StreamBenchmarks.primitiveDoubleRandomElemsAvgBM         thrpt    5  1.588 � 0.438  ops/s
+StreamBenchmarks.primitiveDoubleRandomElemsSumBM         thrpt    5  1.708 � 0.165  ops/s
+
+BUILD SUCCESSFUL in 15m 2s
+4 actionable tasks: 2 executed, 2 up-to-date
+8:53:42: Execution finished ':lab3-streams:StreamBenchmarks.main()'.
