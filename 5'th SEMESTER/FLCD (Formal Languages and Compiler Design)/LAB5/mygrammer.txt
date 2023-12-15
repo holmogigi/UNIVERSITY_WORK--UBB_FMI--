@@ -1,0 +1,23 @@
+program
++  -  *  / : > < <= = == >= ++ -- % ( ) [  ]  { }  ;  space "  , ~ list  string    else  if  int  let  while  in  out  stop and or
+program -> "~" statemelist "~"
+var_declaration -> "let" identifier_list ":" <type> ";"
+identifier_list -> <identifier> | <var_declaration> "," <identifier>
+list_declaration -> "list" <identifier> "(" <identifier> | positive_number ")" ":" <type> ";"
+type -> <int_type> | <string_type>
+int_type -> "int"
+string_type -> "string"
+list_type -> "list"
+statementlist -> <statement> | <statement> ";" <statementlist>
+statement -> <simplestatement> | <structstatement>
+simplestatement -> <assignstatement> | <iostatement> | <var_declaration> | <list_declaration>
+iostatement -> "in" "(" <identifier> ")" ";" | "out" "(" <identifier> ")" ";"
+assignstatement -> <identifier> "=" expression ";"
+structstatement -> <statementlist> | <ifstatement> | <whilestatement>
+ifstatement -> "if" condition "{" statementlist "}" ";" ["else" "{" statementlist "}"] ";"
+whilestatement -> "while" condition "{" statementlist "}" ";"
+expression -> <expression> "+" <term> | <expression> "-" <term> | <term>
+term -> <term> "*" <factor> | <term> "/" <factor> | <factor>
+factor -> "(" <expression> ")" | <identifier> | <constant>
+condition -> <expression> <relation> <expression>
+relation -> "<" | "<=" | "==" | ">=" | ">"
