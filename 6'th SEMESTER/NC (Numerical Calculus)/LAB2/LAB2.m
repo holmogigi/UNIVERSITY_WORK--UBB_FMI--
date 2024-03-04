@@ -82,3 +82,14 @@ for i = 2:n
     a = subs(Tf,x,log(2)); i
     vpa(a,5)
 end
+
+fa = log(1+x);
+Ta = taylor(fa,x,0,'Order',8);
+
+fb = log(1-x);
+Tb = taylor(fb,x,0,'Order',8);
+
+tl = fa - fb;
+a = subs (tl, x, 1/3);
+vpa(a, 6)
+vpa(log(2), 6)
