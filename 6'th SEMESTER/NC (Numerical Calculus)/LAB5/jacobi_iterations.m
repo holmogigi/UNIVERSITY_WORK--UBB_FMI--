@@ -1,8 +1,6 @@
 function [x, nit] = jacobi_iterations(A, b, x0, maxit, epsilon)
-    N = -triu(A, 1);
-    %M = diag(diag(A));
-    M = tril(A);
-    %N = M - A;
+    M = diag(diag(A));
+    N = M - A;
     T = inv(M)*N;
     c = inv(M)*b;
     alfa = norm(T, inf);
