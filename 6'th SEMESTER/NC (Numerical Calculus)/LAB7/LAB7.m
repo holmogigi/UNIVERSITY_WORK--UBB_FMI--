@@ -15,8 +15,10 @@ x = 1/5;
 Nf = newton_int(dd, xi, x)
 cos(pi/5)
 
-
-
+xi = -4:4;
+fi = 2.^xi;
+aitken(xi,fi,1/2)
+sqrt(2)
 
 
 xi = [1000,1010,1020,1030,1040,1050];
